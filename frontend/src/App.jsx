@@ -44,7 +44,7 @@ const AppContent = () => {
   // Agent execution simulation states
   const [activeStepIndex, setActiveStepIndex] = useState(-1);
 
-  const GATEWAY_URL = import.meta.env.VITE_GATEWAY_URL || "http://localhost:3001";
+  const GATEWAY_URL = (import.meta.env.VITE_GATEWAY_URL || "http://localhost:3001").replace(/\/+$/, '');
 
   // Simulate agent progression during loading
   useEffect(() => {

@@ -1,0 +1,5 @@
+{
+  "name": "gen-ai-reading-app",
+  "image": "mcr.microsoft.com/devcontainers/universal:2",
+  "postStartCommand": "sudo iptables-legacy -P FORWARD ACCEPT"
+}

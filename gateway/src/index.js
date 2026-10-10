@@ -2,7 +2,6 @@
 import express from 'express';
 import cors from 'cors';
 import 'express-async-errors';
-import dotenv from 'dotenv';
 
 import logger from './middleware/logger.js';
 import errorHandler from './middleware/errorHandler.js';
@@ -11,8 +10,6 @@ import { authMiddleware, optionalAuth } from './middleware/auth.js';
 import healthRoutes from './routes/health.js';
 import documentsRoutes from './routes/documents.js';
 import queryRoutes from './routes/query.js';
-
-dotenv.config();
 
 const app = express();
 const PORT = process.env.GATEWAY_PORT || 3001;

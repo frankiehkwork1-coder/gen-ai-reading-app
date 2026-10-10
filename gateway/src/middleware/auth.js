@@ -1,4 +1,5 @@
 // Authentication middleware using Supabase JWT
+import 'dotenv/config';
 import { createClient } from '@supabase/supabase-js';
 import logger from './logger.js';
 

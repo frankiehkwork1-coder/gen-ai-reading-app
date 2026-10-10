@@ -1,4 +1,5 @@
 // Supabase client for gateway
+import 'dotenv/config';
 import { createClient } from '@supabase/supabase-js';
 
 const supabaseKey =
